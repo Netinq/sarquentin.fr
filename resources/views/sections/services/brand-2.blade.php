@@ -16,7 +16,7 @@
                 </div>
                 <div class="txt">
                     <div class="description" itemprop="description">
-                        <p>Le développement est la partie technique, souvent la moins accessible pour nos clients. Nous nous efforçons de vulgariser au maximum afin d'être aux plus proches de nos clients, ainsi que leur apporter des connaissances.</p>
+                        <p>Le développement est la partie technique, souvent la moins accessible pour nos clients. Nous nous efforçons de vulgariser au maximum afin d'être au plus proche de nos clients, ainsi que leur apporter des connaissances.</p>
                     </div>
                     <div class="list">
                         <div class="elem" itemscope itemtype="https://schema.org/Thing">

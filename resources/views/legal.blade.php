@@ -17,7 +17,7 @@
         <h2>ARTICLE 5 : Cookies</h2>
         <p>L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de navigation. En naviguant sur le site, il les accepte. Un cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.</p>
         <h2>ARTICLE 6 : Propriété intellectuelle</h2>
-        <p>Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site https://sarquentin.fr, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.</p>
+        <p>Toute utilisation, reproduction, diffusion, commercialisation, modification de tout ou partie du site https://sarquentin.fr, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.</p>
     </div>
     <div class="col-12 col-md-6 col-lg-7 home-landing">
         <img id="home-ld-bg" src="{{asset('images/landing/home.png')}}" alt="Landing background">

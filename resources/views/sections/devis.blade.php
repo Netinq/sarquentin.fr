@@ -3,7 +3,7 @@
         <div class="content col-8 col-md-5 col-xl-4 offset-2 offset-md-1 offset-xl-2 row">
             <div class="txt">
                 <h2>Complétez le formulaire pour demander un devis</h2>
-                <p>Après l'envoie du formulaire, nous vous recontacterons dans des plus bref délais afin d'échanger sur votre projet.</p>
+                <p>Après l'envoi du formulaire, nous vous recontacterons dans les plus brefs délais afin d'échanger sur votre projet.</p>
                 <img src="{{asset('images/svg/send.svg')}}" alt="Send icon">
             </div>
         </div>
@@ -45,7 +45,7 @@
                             <option value="2">VITRINE</option>
                             <option value="3">DYNAMIQUE</option>
                         </select>
-                        <label for="prestation">Prestation désiré</label>
+                        <label for="prestation">Prestation désirée</label>
                         @error('prestation')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>

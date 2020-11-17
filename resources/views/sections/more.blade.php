@@ -8,7 +8,7 @@
             </div>
             <div class="elem">
                 <h3>Localisation</h3>
-                <p>Bordeaux et ces alentours</p>
+                <p>Bordeaux et ses alentours</p>
                 <p>Toute la France par télé-travail</p>
             </div>
             <div class="elem">

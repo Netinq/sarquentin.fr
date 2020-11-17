@@ -2,7 +2,7 @@
     <div class="hide">
         <div class="txt col-12 col-sm-10 col-xl-6 offset-sm-1 offset-xl-3">
             <h2>Notre gamme d'offres</h2>
-            <p>Nous vous proposons un choix de trois offres afin de nous adapter au mieux selon vos besoin.</p>
+            <p>Nous vous proposons un choix de trois offres afin de nous adapter au mieux selon vos besoins.</p>
         </div>
         <div class="pr-ct col-lg-12 col-xl-10 offset-xl-1">
             <div class="pr">
