@@ -1,0 +1,56 @@
+section#clients {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 100px var(--side-padding);
+    background-color: #fff;
+    box-sizing: border-box;
+}
+section#clients div.container-text {
+    width: 55%;
+    box-sizing: border-box;
+}
+section#clients div.carousel {
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    column-gap: 25px;
+    position: relative;
+}
+section#clients div.carousel::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+section#clients div.carousel div.scroller {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    column-gap: 25px;
+    position: relative;
+}
+section#clients div.carousel div.scroller img {
+    height: 150px;
+    animation:translateinfinite 10s linear infinite;
+}
+:root {
+    --translateinfinite: 0;
+}
+@keyframes translateinfinite {
+    100% { transform:translateX(calc(var(--translateinfinite)/2));  }
+}

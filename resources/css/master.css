@@ -53,7 +53,7 @@ body {
 
 /* Default title */
 div.container-text span.pre {
-    color: #272424;
+    color: #D78C35;
     text-transform: uppercase;
     font-weight: 400;
     position: relative;
@@ -67,21 +67,36 @@ div.container-text span.pre::after {
     right: -100px;
     width: 75px;
     height: 1px;
-    background-color: #272424;
+    background-color: #D78C35;
 }
 div.container-text h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: 700;
-    color: #fff;
+    color: #272424;
     text-transform: uppercase;
     white-space: pre-line;
     margin: 5px 0 0;
 }
+div.container-text h2 span {
+    color: #D78C35;
+}
 div.container-text p {
     font-size: 1.1rem;
     font-weight: 300;
-    color: #fff;
+    color: #7E7E7E;
     padding: 0;
     margin: 15px 0 0;
+}
+div.container-text.reverse span.pre {
+    color: #272424;
+}
+div.container-text.reverse span.pre::after {
+    background-color: #272424;
+}
+div.container-text.reverse h2 {
+    color: #fff;
+}
+div.container-text.reverse p {
+    color: #fff;
 }

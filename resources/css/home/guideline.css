@@ -1,0 +1,60 @@
+section#guideline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 100px var(--side-padding);
+    background-color: #D78C35;
+    box-sizing: border-box;
+}
+section#guideline div.container-text {
+    width: 55%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 100px;
+}
+section#guideline div.container-text .btn {
+    width: 55%;
+    margin-top: 25px;
+}
+section#guideline div.box-content {
+    width: 40%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    row-gap: 25px;
+}
+section#guideline div.box-content .box {
+    width: 100%;
+    padding: 25px 75px 25px 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+}
+section#guideline div.box-content .box span {
+    font-weight: bolder;
+    font-size: 6rem;
+    color: #D78C35;
+    width: 20%;
+}
+section#guideline div.box-content .box:nth-child(2) span {color: #2FB979;}
+section#guideline div.box-content .box:nth-child(3) span {color: #3555D7;}
+section#guideline div.box-content .box:nth-child(4) span {color: #D73596;}
+section#guideline div.box-content .box p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #272424;
+    margin-left: 25px;
+    width: 80%;
+}

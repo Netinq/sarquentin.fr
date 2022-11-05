@@ -1,0 +1,78 @@
+section#welcome {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+section#welcome div.container-text {
+    width: 60%;
+    padding-left: var(--side-padding);
+    box-sizing: border-box;
+}
+section#welcome div.container-text h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #272424;
+    text-transform: uppercase;
+    white-space: pre-line;
+    line-height: 4rem;
+    margin: 0;
+}
+section#welcome div.container-text h1 span {
+    color: #D78C35;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+section#welcome div.container-text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #7E7E7E;
+    line-height: 2rem;
+    margin: 25px 0 0;
+}
+section#welcome div.container-text .btn-content {
+    margin-top: 25px;
+}
+section#welcome div.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+section#welcome div.container-image img#landing {
+    height: 100vh;
+}
+section#welcome div.container-image img#tube1 {
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: bounce 5s ease-in-out infinite, translate-diagonal 17s linear infinite;
+}
+section#welcome div.container-image img#tube2 {
+    height: 35vh;
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    animation: bounce 5s ease-in-out infinite, translate-diagonal 10s linear infinite;
+}
+section#welcome div.container-image svg.window {
+    height: 35vh;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: bounce-custom 5s ease-in-out infinite;
+}
+section#welcome div.container-image svg.window .scaleAnimation {
+    animation: scale 7s infinite ease-in-out;
+    transform-origin: center;
+    position: relative;
+}
+section#welcome div.container-image svg.window .scaleAnimation2 {animation: scale 6.8s infinite alternate;}
+section#welcome div.container-image svg.window .scaleAnimation3 {animation: scale 7.2s infinite alternate;}
+section#welcome div.container-image svg.window .scaleAnimation4 {animation: scale 8.2s infinite alternate;}
+section#welcome div.container-image svg.window .scaleAnimation5 {animation: scale-reverse 8.9s infinite alternate;}
