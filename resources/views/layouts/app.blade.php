@@ -12,7 +12,7 @@
         <meta name="subject" content="MONSIEUR QUENTIN SAR">
 
         <meta name="identifier-URL" content="sarquentin.fr">
-        <meta name="description" content="@yield('descriptio n')">
+        <meta name="description" content="@yield('description')">
         <meta name="reply-to" content="pro@sarquentin.fr">
 
         <meta name="language" content="FR">
