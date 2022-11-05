@@ -1,0 +1,57 @@
+@keyframes scale {
+    0% {
+        transform: scale(.95);
+    }
+    50% {
+        transform: scale(1) rotate(2deg);
+    }
+    100% {
+        transform: scale(.95);
+    }
+}
+@keyframes scale-reverse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.9) rotate(-2deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes bounce-custom
+{
+    0% {
+        transform: translateY(-50%);
+    }
+    50% {
+        transform: translateY(calc(-50% - 16px));
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+@keyframes bounce
+{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-16px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes translate-diagonal {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10%, 10%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
