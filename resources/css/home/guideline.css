@@ -8,6 +8,13 @@ section#guideline {
     background-color: #D78C35;
     box-sizing: border-box;
 }
+section#guideline img#tube_reverse {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 45vw;
+    animation: bounce 5s ease-in-out infinite;
+}
 section#guideline div.container-text {
     width: 55%;
     box-sizing: border-box;

@@ -23,6 +23,7 @@
         </div>
     </section>
     <section id="guideline" class="stickyContainer">
+        <img id="tube_reverse" src="{{ asset('svg/tube2_reverse.svg') }}" alt="Illustration">
         <div class="container-text reverse">
             <span class="pre">Ensemble</span>
             <h2>Notre ligne directrice.</h2>
