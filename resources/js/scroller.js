@@ -5,6 +5,7 @@ window.onload = () => {
     Array.from(scroller.children).forEach(child => {
         width += child.offsetWidth;
     });
+    width += 25*(scroller.children.length);
     document.documentElement.style.setProperty('--translateinfinite', `-${width}px`);
 }
 

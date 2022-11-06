@@ -12,7 +12,7 @@
         <meta name="subject" content="MONSIEUR QUENTIN SAR">
 
         <meta name="identifier-URL" content="sarquentin.fr">
-        <meta name="description" content="@yield('description')">
+        <meta name="description" content="Développeur web freelance, je vous accompagne dans la réalisation de votre projet de site internet pour votre entreprise ou votre activité. Je vous propose des solutions sur mesure, adaptées à vos besoins et à votre budget.">
         <meta name="reply-to" content="pro@sarquentin.fr">
 
         <meta name="language" content="FR">
@@ -28,12 +28,12 @@
         <meta name="twitter:title" content="@hasSection('title')@yield('title')@else Créons votre site web sur mesure.@endif" />
         <meta name="twitter:url" content="https://sarquentin.fr" />
         <meta name="twitter:domain" content="sarquentin.fr" />
-        <meta name="twitter:description" content="@yield('description')" />
+        <meta name="twitter:description" content="Développeur web freelance, je vous accompagne dans la réalisation de votre projet de site internet pour votre entreprise ou votre activité. Je vous propose des solutions sur mesure, adaptées à vos besoins et à votre budget." />
         <meta name="twitter:image" content="{{asset('images/meta.jpg')}}" />
 
         <!-- Open Graph meta -->
         <meta property="og:title" content="@hasSection('title')@yield('title')@else Créons votre site web sur mesure.@endif" />
-        <meta property="og:description" content="@yield('description')" />
+        <meta property="og:description" content="Développeur web freelance, je vous accompagne dans la réalisation de votre projet de site internet pour votre entreprise ou votre activité. Je vous propose des solutions sur mesure, adaptées à vos besoins et à votre budget." />
         <meta property="og:image" content="{{asset('images/meta.jpg')}}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sarquentin.fr" />
