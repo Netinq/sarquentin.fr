@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 75px var(--side-padding);
+    box-sizing: border-box;
+    column-gap: 50px;
+}
+
+footer img.logo {
+    height: 150px;
+    align-self: center;
+}
+footer div.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer div.box h3 {
+    color: #D78C35;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0;
+}
+footer div.box a {
+    color: #7E7E7E;
+    font-size: 1rem;
+    font-weight: 400;
+}
+footer div.box a:hover {
+    color: #D78C35;
+}
+footer div.box p {
+    color: #7E7E7E;
+    font-size: 1rem;
+    white-space: pre-line;
+    margin: 0;
+    padding: 0;
+}
+footer div.box .btn {
+    margin-top: 25px;
+}

@@ -1,0 +1,123 @@
+section#feedback {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 100px var(--side-padding);
+    box-sizing: border-box;
+}
+section#feedback div.container-text {
+    width: 55%;
+}
+section#feedback img#feeedbackLanding {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    height: 80%;
+    z-index: -1;
+}
+section#feedback div.container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 25px;
+    margin-top: 50px;
+    padding-right: 10%;
+    position: relative;
+}
+section#feedback div.container button#next {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFAC71;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    transition: .3s all;
+}
+section#feedback div.container button#next:active {
+    border: none;
+    transform: scale(0.9) translateY(-50%);
+}
+section#feedback div.container div.review {
+    height: 55vh;
+    width: calc(100% / 3);
+    padding: 25px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: review .7s ease-out, opacity ;
+}
+@keyframes opacity {
+    0%, 100% {
+        opacity: 0;
+    }
+}
+@keyframes review {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+section#feedback div.container div.review img.authorImg {
+    height: 100px;
+    width: 100px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    align-self: center;
+}
+section#feedback div.container div.review div.note {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    column-gap: 5px;
+}
+section#feedback div.container div.review div.note img.star {
+    width: calc(100% / 5 - 5px);
+}
+section#feedback div.container div.review h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #272424;
+    margin: 15px 0 0;
+}
+section#feedback div.container div.review h4 span {
+    font-size: .8rem;
+    font-weight: 600;
+    color: #7E7E7E;
+}
+section#feedback div.container div.review p {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #7E7E7E;
+    margin: 15px 0 0;
+}
+section#feedback div.container div.review a {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--orange);
+    margin: 5px 0 0;
+}

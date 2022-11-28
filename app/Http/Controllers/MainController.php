@@ -27,7 +27,8 @@ class MainController extends Controller
             $reviews  = json_decode($reviews);
             $reviews  = $reviews[6][52][0]; // NEW IN 2020
         }
-        $clients = ['shyroquizz', 'impex', 'districtgames', 'lexnea', 'bst'];
-        return view('index', compact('clients'));
+        $clients = ['shyroquizz', 'impex', 'districtgames', 'lexnea', 'bst', 'animecards'];
+        return view('index', compact('clients', 'reviews'));
     }
+
 }

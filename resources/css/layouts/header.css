@@ -1,0 +1,130 @@
+button#menu {
+    border: none;
+    position: fixed;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    z-index: 10000;
+    background-color: rgba(243, 243, 243, 0.9);
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s all;
+}
+button#menu:hover {
+    transform: scale(1.1) translateY(-50%);
+}
+button#menu img {
+    height: 50px;
+    margin-top: 5px;
+}
+div#fullMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(241,210,107);
+    background: -moz-linear-gradient(90deg, rgba(241,210,107,1) 0%, rgba(230,180,84,1) 50%, rgba(215,140,53,0.8) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(241,210,107,1) 0%, rgba(230,180,84,1) 50%, rgba(215,140,53,0.8) 100%);
+    background: linear-gradient(90deg, rgba(241,210,107,1) 0%, rgba(230,180,84,1) 50%, rgba(215,140,53,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1d26b",endColorstr="#d78c35",GradientType=1);
+    z-index: 10000;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px var(--side-padding);
+    animation: menu .3s;
+}
+div#fullMenu nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 15px;
+}
+div#fullMenu nav a {
+    font-size:6rem;
+    line-height: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FFF8C2;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,248,194,1) 50%, rgba(255,248,194,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,248,194,1) 50%, rgba(255,248,194,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,248,194,1) 50%, rgba(255,248,194,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#fff8c2",GradientType=1);
+    background-position: 100% center;
+    background-size: 200% auto;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .3s all;
+}
+div#fullMenu nav a:nth-child(1) {animation: menu .3s .1s, opacity .1s;}
+div#fullMenu nav a:nth-child(2) {animation: menu .3s .2s, opacity .2s;}
+div#fullMenu nav a:nth-child(3) {animation: menu .3s .3s, opacity .3s;}
+div#fullMenu nav a:nth-child(4) {animation: menu .3s .4s, opacity .4s;}
+div#fullMenu nav a:nth-child(5) {animation: menu .3s .5s, opacity .5s;}
+div#fullMenu nav a:nth-child(6) {animation: menu .3s .6s, opacity .6s;}
+div#fullMenu nav a:hover {
+    background-position: 0% center;
+}
+div#fullMenu img#menuLogo {
+    height: 50vh;
+    animation: fade 1.8s;
+}
+div#fullMenu button#closeMenu {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s all;
+}
+div#fullMenu button#closeMenu:hover {
+    transform: scale(1.1) translateY(-50%);
+}
+div#fullMenu button#closeMenu img {
+    height: 25px;
+}
+@keyframes opacity {
+    0%, 100% {
+        opacity: 0;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes menu {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
