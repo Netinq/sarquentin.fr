@@ -112,3 +112,29 @@ div.container-text.reverse h2 {
 div.container-text.reverse p {
     color: #fff;
 }
+
+@media (max-width: 1200px) {
+    div.container-text h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    div.container-text p {
+        font-size: 1rem;
+    }
+    .btn-content {
+        flex-direction: column;
+    }
+}
+@media (max-width: 991px) {
+    div.container-text h2 {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+    div.container-text p {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 1rem;
+        min-width: 150px;
+    }
+}

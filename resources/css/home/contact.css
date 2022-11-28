@@ -28,6 +28,7 @@ section#contact div.container {
     justify-content: space-between;
     align-items: center;
     column-gap: 25px;
+    row-gap: 25px;
     margin-top: 75px;
 }
 section#contact div.container a.box {
@@ -59,7 +60,7 @@ section#contact div.container a.box div.container-image {
     background-color: #F6E3CE;
 }
 section#contact div.container a.box div.container-image img {
-    height: 50px;
+    height: 50%;
 }
 section#contact div.container a.box div.container-text {
     text-align: center;
@@ -74,4 +75,18 @@ section#contact div.container a.box div.container-text h3 {
 section#contact div.container a.box div.container-text p {
     font-size: 1rem;
     margin: 0;
+}
+
+@media (max-width: 991px) {
+    section#contact div.container {
+        width: 100%;
+        flex-direction: column;
+    }
+    section#contact div.container a.box div.container-image {
+        height: 75px;
+        width: 75px;
+    }
+    section#contact div.container a.box div.container-text h3 {
+        font-size: 1.6rem;
+    }
 }

@@ -46,3 +46,29 @@ footer div.box p {
 footer div.box .btn {
     margin-top: 25px;
 }
+
+@media (max-width: 991px) {
+    footer {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    footer div.box {
+        width: calc(100% / 3 - 50px);
+    }
+    footer div.box:nth-child(1) {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        flex-wrap: wrap;
+        row-gap: 50px;
+        padding: 25px var(--side-padding);
+    }
+    footer div.box {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

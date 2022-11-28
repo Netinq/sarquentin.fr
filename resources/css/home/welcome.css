@@ -76,3 +76,79 @@ section#welcome div.container-image svg.window .scaleAnimation2 {animation: scal
 section#welcome div.container-image svg.window .scaleAnimation3 {animation: scale 7.2s infinite alternate;}
 section#welcome div.container-image svg.window .scaleAnimation4 {animation: scale 8.2s infinite alternate;}
 section#welcome div.container-image svg.window .scaleAnimation5 {animation: scale-reverse 8.9s infinite alternate;}
+
+@media (max-width: 1400px) {
+    section#welcome div.container-text {
+        width: 50%;
+        padding-right: 5%;
+    }
+    section#welcome div.container-text h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    section#welcome div.container-text p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
+@media (max-width: 1200px) {
+    section#welcome div.container-text {
+        width: 45%;
+        padding-right: 5%;
+    }
+    section#welcome div.container-text h1 {
+        font-size: 2.4rem;
+        line-height: 2rem;
+    }
+}
+@media (max-width: 991px) {
+    section#welcome {
+        flex-direction: column;
+        justify-content: center;
+    }
+    section#welcome div.container-text {
+        width: 100%;
+        padding-right: var(--side-padding);
+    }
+    section#welcome div.container-text h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    section#welcome div.container-text p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    section#welcome div.container-image img#landing {
+        display: none;
+    }
+    section#welcome div.container-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section#welcome div.container-image img#tube1, section#welcome div.container-image svg.window {
+        display: none;
+    }
+    section#welcome div.container-image img#tube2 {
+        height: 25vh;
+    }
+    section#welcome div.container-image svg.window {
+        height: 25vh;
+        bottom: 0;
+        right: 15vw;
+        left: auto;
+        top: calc(100% - 15vh);
+    }
+}
+@media (max-width: 768px) {
+    section#welcome div.container-text h1 {
+        font-size: 2.4rem;
+        line-height: 2rem;
+    }
+    section#welcome div.container-text p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}

@@ -20,6 +20,8 @@ section#guideline div.container-text {
     box-sizing: border-box;
     position: sticky;
     top: 100px;
+    background-color: #D78C35;
+    z-index: 100;
 }
 section#guideline div.container-text .btn {
     width: 55%;
@@ -64,4 +66,50 @@ section#guideline div.box-content .box p {
     color: #272424;
     margin-left: 25px;
     width: 80%;
+}
+
+@media (max-width: 1400px) {
+    section#guideline div.box-content .box span {
+        font-size: 5rem;
+    }
+    section#guideline div.box-content .box p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1200px) {
+    section#guideline div.box-content .box span {
+        font-size: 4rem;
+    }
+    section#guideline div.box-content .box p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 991px) {
+    section#guideline {
+        flex-direction: column;
+    }
+    section#guideline div.container-text {
+        top: 0;
+        padding-top: 100px;
+        padding-bottom: 25px;
+        width: 100%;
+    }
+    section#guideline div.box-content {
+        width: 100%;
+        margin-top: 50px;
+    }
+    section#guideline div.box-content .box span {
+        font-size: 6rem;
+    }
+    section#guideline div.box-content .box p {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 768px) {
+    section#guideline div.box-content .box span {
+        font-size: 4rem;
+    }
+    section#guideline div.box-content .box p {
+        font-size: 1rem;
+    }
 }

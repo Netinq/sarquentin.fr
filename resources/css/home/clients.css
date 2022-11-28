@@ -54,3 +54,18 @@ section#clients div.carousel div.scroller img {
 @keyframes translateinfinite {
     100% { transform:translateX(calc(var(--translateinfinite)/2));  }
 }
+@media (max-width: 768px) {
+    section#clients {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section#clients div.container-text {
+        width: 100%;
+    }
+    section#clients div.carousel {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+

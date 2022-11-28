@@ -1,5 +1,7 @@
 <footer>
-    <img class="logo" src="{{asset('images/logo.png')}}" alt="Logo">
+    <div class="box">
+        <img class="logo" src="{{asset('images/logo.png')}}" alt="Logo">
+    </div>
     <div class="box">
         <h3>Sitemap</h3>
         <a href="#welcome">Bienvenue</a>
