@@ -10,6 +10,10 @@ section#welcome div.container-text {
     width: 60%;
     padding-left: var(--side-padding);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 section#welcome div.container-text h1 {
     font-size: 3.5rem;
@@ -66,6 +70,11 @@ section#welcome div.container-image svg.window {
     left: 0;
     transform: translateY(-50%);
     animation: bounce-custom 5s ease-in-out infinite;
+}
+section#welcome div.container-text svg.windowMobile {
+    height: 25vh;
+    margin-bottom: 25px;
+    animation: bounce-customMobile 5s ease-in-out infinite;
 }
 section#welcome div.container-image svg.window .scaleAnimation {
     animation: scale 7s infinite ease-in-out;
@@ -144,11 +153,17 @@ section#welcome div.container-image svg.window .scaleAnimation5 {animation: scal
 }
 @media (max-width: 768px) {
     section#welcome div.container-text h1 {
-        font-size: 2.4rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 1.8rem;
     }
     section#welcome div.container-text p {
-        font-size: 1rem;
+        font-size: .8rem;
         line-height: 1.4rem;
+    }
+    section#welcome div.container-image img#tube2 {
+        display: none;
+    }
+    section#welcome .btn-content .btn:nth-child(2) {
+        display: none;
     }
 }

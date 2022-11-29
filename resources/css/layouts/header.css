@@ -128,3 +128,31 @@ div#fullMenu button#closeMenu img {
         transform: translateX(0);
     }
 }
+
+@media (max-width: 991px) {
+    button#menu {
+        top: auto;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+    }
+    button#menu:hover {
+        transform: scale(1.1) translateX(-50%) translateY(0);
+    }
+    div#fullMenu nav a {
+        font-size:3rem;
+        line-height: 3rem;
+    }
+    div#fullMenu img#menuLogo {
+        display: none;
+    }
+    div#fullMenu button#closeMenu {
+        top: auto;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+    }
+    div#fullMenu button#closeMenu:hover {
+        transform: scale(1.1) translateX(-50%) translateY(0);
+    }
+}

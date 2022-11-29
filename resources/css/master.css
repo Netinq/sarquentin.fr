@@ -137,4 +137,15 @@ div.container-text.reverse p {
         font-size: 1rem;
         min-width: 150px;
     }
+    .btn-content {
+        flex-direction: row;
+    }
+}
+@media (max-width: 768px) {
+    .btn-content {
+        flex-direction: column;
+    }
+    .btn {
+        min-width: 200px;
+    }
 }

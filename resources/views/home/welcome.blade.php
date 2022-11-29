@@ -1,5 +1,6 @@
 <section id="welcome">
     <div class="container-text">
+        @svg('window', 'windowMobile')
         <h1>Créons votre site web
             <span>sur mesure.</span></h1>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
