@@ -52,7 +52,7 @@
                 "@type": "Organization",
                 "name": "MONSIEUR QUENTIN SAR",
                 "legalName": "MONSIEUR QUENTIN SAR",
-                "description": "Créez dès maintenant votre site vitrine dès maintenant. Nous vous accompagnons dans la réalisation d\'un web design, dans le développement technique du site, ainsi que sa mise en ligne et son référencement.",
+                "description": "Développeur web freelance, je vous accompagne dans la réalisation de votre projet de site internet pour votre entreprise ou votre activité. Je vous propose des solutions sur mesure, adaptées à vos besoins et à votre budget.",
                 "image": "https://sarquentin.fr/images/meta.jpg",
                 "logo": "https://sarquentin.fr/images/logo.png",
                 "url": "https://sarquentin.fr",
