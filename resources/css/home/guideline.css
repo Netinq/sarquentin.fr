@@ -20,7 +20,6 @@ section#guideline div.container-text {
     box-sizing: border-box;
     position: sticky;
     top: 100px;
-    background-color: #D78C35;
     z-index: 100;
 }
 section#guideline div.container-text .btn {
@@ -90,9 +89,10 @@ section#guideline div.box-content .box p {
     }
     section#guideline div.container-text {
         top: 0;
-        padding-top: 100px;
+        padding-top: 25px;
         padding-bottom: 25px;
         width: 100%;
+        background-color: #D78C35;
     }
     section#guideline div.box-content {
         width: 100%;

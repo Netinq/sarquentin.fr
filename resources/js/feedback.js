@@ -10,8 +10,8 @@ else displayedReviews = [0];
 Array.from(reviews).forEach((review, index) => {
     const reviewBody = review.querySelector('p.reviewBody');
     const reviewAuthor = review.querySelector('h4');
-    if (reviewAuthor.textContent.length > 30 && window.innerWidth >= 991) reviewAuthor.innerHTML = redureAuthor(reviewAuthor.textContent);
-    else if (reviewAuthor.textContent.length > 20) reviewAuthor.innerHTML = redureAuthor(reviewAuthor.textContent);
+    if (reviewAuthor.textContent.length > 30 && window.innerWidth >= 991) reviewAuthor.innerHTML = reduceAuthor(reviewAuthor.textContent);
+    else if (reviewAuthor.textContent.length > 20) reviewAuthor.innerHTML = reduceAuthor(reviewAuthor.textContent);
     reviewBody.innerHTML = reduceText(reviewBody.innerHTML);
     const max = window.innerWidth >= 1200 ? 3 : window.innerWidth >= 991 ? 2 : 1;
     if (index >= max) {
