@@ -99,13 +99,13 @@ section#feedback div.container div.review div.note {
 section#feedback div.container div.review div.note img.star {
     width: calc(100% / 5 - 5px);
 }
-section#feedback div.container div.review h4 {
+section#feedback div.container div.review h3 {
     font-size: 1.1rem;
     font-weight: 700;
     color: #272424;
     margin: 15px 0 0;
 }
-section#feedback div.container div.review h4 span {
+section#feedback div.container div.review h3 span {
     font-size: .8rem;
     font-weight: 600;
     color: #7E7E7E;
@@ -140,7 +140,7 @@ section#feedback div.container div.review a {
     section#feedback div.container div.review {
         width: 100%;
     }
-    section#feedback div.container div.review h4 {
+    section#feedback div.container div.review h3 {
         font-size: 1rem;
     }
     section#feedback img#feeedbackLanding {
