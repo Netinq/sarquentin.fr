@@ -75,6 +75,7 @@ section#welcome div.container-text svg.windowMobile {
     height: 25vh;
     margin-bottom: 25px;
     animation: bounce-customMobile 5s ease-in-out infinite;
+    display: none;
 }
 section#welcome div.container-image svg.window .scaleAnimation {
     animation: scale 7s infinite ease-in-out;
@@ -149,6 +150,9 @@ section#welcome div.container-image svg.window .scaleAnimation5 {animation: scal
         right: 15vw;
         left: auto;
         top: calc(100% - 15vh);
+    }
+    section#welcome div.container-text svg.windowMobile {
+        display: block;
     }
 }
 @media (max-width: 768px) {

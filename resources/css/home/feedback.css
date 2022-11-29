@@ -55,7 +55,7 @@ section#feedback div.container div.review {
     width: calc(100% / 3);
     padding: 25px 50px;
     box-sizing: border-box;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
