@@ -8,7 +8,9 @@
         @foreach($reviews as $review)
         <div class="review" itemscope itemtype="https://schema.org/Review">
             <img class="authorImg" src="{{ $review[0][2] }}" alt="" />
-            <meta itemprop="author" content = "{{$review[0][1]}}">
+            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="givenName" content = "{{$review[0][1]}}">
+            </div>
             <div class="note" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                 <meta itemprop="ratingValue" content = "{{$review[4]}}">
                 @for ($i = 0; $i < (5 - $review[4]); $i++)
