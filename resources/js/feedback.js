@@ -1,11 +1,11 @@
 const reviews = document.querySelectorAll('.review');
 const next = document.querySelector('#next');
 
-let displayedReviews;
+let displayedReviews = [];
 
-if (window.innerWidth >= 1200) displayedReviews = [0, 1, 2]
-else if (window.innerWidth >= 991) displayedReviews = [0, 1]
-else displayedReviews = [0]
+if (window.innerWidth >= 1200) displayedReviews = [0, 1, 2];
+else if (window.innerWidth >= 991) displayedReviews = [0, 1];
+else displayedReviews = [0];
 
 Array.from(reviews).forEach((review, index) => {
     const reviewBody = review.querySelector('p.reviewBody');
@@ -38,10 +38,9 @@ function nextReviews() {
         if (displayedReviews[0]+max <= reviews.length - 1) displayedReviews[0] +=max;
         else displayedReviews[0] = 2 - ((reviews.length - 1) - displayedReviews[0]);
     } else {
-        if (displayedReviews[0]+max <= reviews.length - 1) displayedReviews[0] +=max;
+        if (displayedReviews[0] + max <= reviews.length - 1) displayedReviews[0] += max;
         else displayedReviews[0] = 2 - ((reviews.length - 1) - displayedReviews[0]);
-
-    console.log(displayedReviews);
+    }
     displayReviews();
 }
 
@@ -69,6 +68,6 @@ function reduceText(text) {
     }
 }
 
-function redureAuthor(text) {
+function reduceAuthor(text) {
     return text.split(' ')[0]+',<span>'+text.split(',')[1]+'</span>';
 }
