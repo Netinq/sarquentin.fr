@@ -15,6 +15,12 @@ section#welcome div.container-text {
     justify-content: center;
     align-items: flex-start;
 }
+section#welcome img#logo {
+    height: 75px;
+    position: absolute;
+    left: var(--side-padding);
+    top: 25px;
+}
 section#welcome div.container-text h1 {
     font-size: 3.5rem;
     font-weight: 900;
@@ -119,6 +125,7 @@ section#welcome div.container-image svg.window .scaleAnimation5 {animation: scal
     section#welcome div.container-text {
         width: 100%;
         padding-right: var(--side-padding);
+        padding-top: 50px;
     }
     section#welcome div.container-text h1 {
         font-size: 3rem;
@@ -152,7 +159,10 @@ section#welcome div.container-image svg.window .scaleAnimation5 {animation: scal
         top: calc(100% - 15vh);
     }
     section#welcome div.container-text svg.windowMobile {
-        display: block;
+        display: none;
+    }
+    section#welcome img#logo {
+        height: 150px;
     }
 }
 @media (max-width: 768px) {

@@ -1,8 +1,8 @@
 <section id="feedback">
     <div class="container-text">
-        <span class="pre">parce que</span>
-        <h2>vos avis comptent<span>.</span></h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+        <span class="pre">{!! $contents->feedback->pre !!}</span>
+        <h2>{!! $contents->feedback->title !!}</h2>
+        <p>{!! $contents->feedback->description !!}</p>
     </div>
     <div class="container">
         @foreach($reviews as $review)

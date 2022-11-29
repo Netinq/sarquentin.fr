@@ -3,7 +3,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Section;
 use Illuminate\Http\Request;
+use PHPUnit\Util\Json;
 
 class MainController extends Controller
 {
@@ -28,7 +30,23 @@ class MainController extends Controller
             $reviews  = $reviews[6][52][0]; // NEW IN 2020
         }
         $clients = ['shyroquizz', 'impex', 'districtgames', 'lexnea', 'bst', 'animecards'];
-        return view('index', compact('clients', 'reviews'));
+
+        $contentsDAO = Section::all()->load('contents');
+        $contents = new Json();
+        foreach($contentsDAO as $content) {
+            $jsonName = $content->htmlid;
+            $contents->$jsonName = new Json();
+            foreach($content->contents as $content) {
+                $jsonSubName = $content->htmlclass;
+                $contents->$jsonName->$jsonSubName = $content->content;
+            }
+        }
+        return view('index', compact('clients', 'reviews', 'contents'));
+    }
+
+    public function legal()
+    {
+        return view('legal');
     }
 
 }

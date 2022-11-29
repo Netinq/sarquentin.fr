@@ -122,20 +122,12 @@ section#feedback div.container div.review a {
     color: var(--orange);
     margin: 5px 0 0;
 }
-@media (max-width: 1400px) {
-    section#feedback div.container div.review {
-        min-height: 65vh;
-    }
-}
 @media (max-width: 1200px) {
     section#feedback div.container {
         padding-right: 15%;
     }
     section#feedback div.container div.review {
         width: calc(100% / 2);
-    }
-    section#feedback div.container div.review {
-        min-height: 70vh;
     }
 }
 @media (max-width: 991px) {

@@ -17,6 +17,7 @@ export default defineConfig({
                 'resources/css/master.css',
                 'resources/css/fonts.css',
                 'resources/css/app.css',
+                'resources/css/legal.css',
                 'resources/css/animations.css',
                 'resources/js/app.js',
                 'resources/js/sticky.js',

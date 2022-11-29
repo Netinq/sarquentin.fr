@@ -1,12 +1,12 @@
 <section id="welcome">
+    <img id="logo" src="{{asset('images/logo.png')}}" alt="logo">
     <div class="container-text">
         @svg('window', 'windowMobile')
-        <h1>Créons votre site web
-            <span>sur mesure.</span></h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+        <h1>{!!  $contents->welcome->title !!}</h1>
+        <p>{!! $contents->welcome->description !!}</p>
         <div class="btn-content">
             <a href="#guideline" class="btn btn-primary">Découvrir</a>
-            <a href="#contact" class="btn btn-secondary">Contactez-nous</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
         </div>
     </div>
     <div class="container-image">
