@@ -4,7 +4,7 @@
         <span class="pre">Ensemble</span>
         <h2>Notre ligne directrice.</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-        <a href="" class="btn btn-tertiary">Contactez-nous</a>
+        <a href="#contact" class="btn btn-tertiary">Contactez-nous</a>
     </div>
     <div class="box-content">
         <div class="box">

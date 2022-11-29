@@ -51,7 +51,7 @@ section#feedback div.container button#next:active {
     transform: scale(0.9) translateY(-50%);
 }
 section#feedback div.container div.review {
-    height: 55vh;
+    min-height: 55vh;
     width: calc(100% / 3);
     padding: 25px 50px;
     box-sizing: border-box;
@@ -64,6 +64,7 @@ section#feedback div.container div.review {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     animation: review .7s ease-out, opacity ;
+    padding-bottom: 25px;
 }
 @keyframes opacity {
     0%, 100% {
@@ -123,7 +124,7 @@ section#feedback div.container div.review a {
 }
 @media (max-width: 1400px) {
     section#feedback div.container div.review {
-        height: 65vh;
+        min-height: 65vh;
     }
 }
 @media (max-width: 1200px) {
@@ -134,7 +135,7 @@ section#feedback div.container div.review a {
         width: calc(100% / 2);
     }
     section#feedback div.container div.review {
-        height: 70vh;
+        min-height: 70vh;
     }
 }
 @media (max-width: 991px) {

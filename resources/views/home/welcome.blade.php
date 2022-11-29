@@ -5,8 +5,8 @@
             <span>sur mesure.</span></h1>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
         <div class="btn-content">
-            <a href="#" class="btn btn-primary">Découvrir</a>
-            <a href="#" class="btn btn-secondary">Contactez-nous</a>
+            <a href="#guideline" class="btn btn-primary">Découvrir</a>
+            <a href="#contact" class="btn btn-secondary">Contactez-nous</a>
         </div>
     </div>
     <div class="container-image">
