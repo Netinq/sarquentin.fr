@@ -133,6 +133,9 @@ section#feedback div.container div.review a {
     section#feedback div.container div.review {
         width: calc(100% / 2);
     }
+    section#feedback div.container div.review {
+        height: 70vh;
+    }
 }
 @media (max-width: 991px) {
     section#feedback div.container-text {
