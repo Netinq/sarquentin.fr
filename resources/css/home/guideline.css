@@ -20,7 +20,6 @@ section#guideline div.container-text {
     box-sizing: border-box;
     position: sticky;
     top: 100px;
-    background-color: #D78C35;
     z-index: 100;
 }
 section#guideline div.container-text .btn {
@@ -87,15 +86,18 @@ section#guideline div.box-content .box p {
 @media (max-width: 991px) {
     section#guideline {
         flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
     }
     section#guideline div.container-text {
         top: 0;
-        padding-top: 100px;
-        padding-bottom: 25px;
+        padding: 25px var(--side-padding);
         width: 100%;
+        background-color: #D78C35;
     }
     section#guideline div.box-content {
         width: 100%;
+        padding: 0 var(--side-padding);
         margin-top: 50px;
     }
     section#guideline div.box-content .box span {

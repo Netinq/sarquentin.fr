@@ -64,6 +64,7 @@ footer div.box .btn {
         flex-wrap: wrap;
         row-gap: 50px;
         padding: 25px var(--side-padding);
+        padding-bottom: 150px;
     }
     footer div.box {
         width: 100%;

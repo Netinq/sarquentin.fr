@@ -1,0 +1,36 @@
+section#legal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding: 100px var(--side-padding);
+    background-color: var(--orange);
+}
+
+section#legal h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: pre-line;
+    margin: 5px 0 0;
+}
+
+section#legal h2 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: pre-line;
+    margin: 50px 0 0;
+}
+section#legal p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 0;
+    margin: 15px 0 0;
+}

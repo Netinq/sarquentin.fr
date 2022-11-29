@@ -90,3 +90,13 @@ section#contact div.container a.box div.container-text p {
         font-size: 1.6rem;
     }
 }
+
+@media (max-width: 768px) {
+    section#contact div.container a.box div.container-text h3 {
+        font-size: 1.2rem;
+    }
+    section#contact div.container a.box div.container-text p {
+        font-size: .8rem;
+        margin: 0;
+    }
+}

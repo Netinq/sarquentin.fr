@@ -4,11 +4,11 @@
     </div>
     <div class="box">
         <h3>Sitemap</h3>
-        <a href="#welcome">Bienvenue</a>
-        <a href="#guideline">Guideline</a>
-        <a href="#services">Services</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
+        <a href="{{route('index')}}#welcome">Bienvenue</a>
+        <a href="{{route('index')}}#guideline">Guideline</a>
+        <a href="{{route('index')}}#services">Services</a>
+        <a href="{{route('index')}}#clients">Clients</a>
+        <a href="{{route('index')}}#contact">Contact</a>
     </div>
     <div class="box">
         <h3>Entreprise</h3>
@@ -18,7 +18,7 @@
     </div>
     <div class="box">
         <h3>Informations</h3>
-        <a href="#">Mentions légales</a>
+        <a href="{{route('legal')}}">Mentions légales</a>
         <a href="https://blog.sarquentin.fr" class="btn btn-primary" target="_blank">Mon blog</a>
     </div>
 </footer>

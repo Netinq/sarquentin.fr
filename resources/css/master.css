@@ -11,6 +11,7 @@
     user-select: none;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 a, a:visited {
     text-decoration: none;
@@ -136,5 +137,16 @@ div.container-text.reverse p {
     .btn {
         font-size: 1rem;
         min-width: 150px;
+    }
+    .btn-content {
+        flex-direction: row;
+    }
+}
+@media (max-width: 768px) {
+    .btn-content {
+        flex-direction: column;
+    }
+    .btn {
+        min-width: 200px;
     }
 }

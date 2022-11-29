@@ -23,7 +23,7 @@ section#feedback div.container {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     column-gap: 25px;
     margin-top: 50px;
     padding-right: 10%;
@@ -51,11 +51,11 @@ section#feedback div.container button#next:active {
     transform: scale(0.9) translateY(-50%);
 }
 section#feedback div.container div.review {
-    height: 55vh;
+    min-height: 55vh;
     width: calc(100% / 3);
     padding: 25px 50px;
     box-sizing: border-box;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -64,6 +64,7 @@ section#feedback div.container div.review {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     animation: review .7s ease-out, opacity ;
+    padding-bottom: 25px;
 }
 @keyframes opacity {
     0%, 100% {
@@ -120,4 +121,44 @@ section#feedback div.container div.review a {
     font-weight: 400;
     color: var(--orange);
     margin: 5px 0 0;
+}
+@media (max-width: 1200px) {
+    section#feedback div.container {
+        padding-right: 15%;
+    }
+    section#feedback div.container div.review {
+        width: calc(100% / 2);
+    }
+}
+@media (max-width: 991px) {
+    section#feedback div.container-text {
+        width: 100%;
+    }
+    section#feedback div.container {
+        padding-right: 20%;
+    }
+    section#feedback div.container div.review {
+        width: 100%;
+    }
+    section#feedback div.container div.review h4 {
+        font-size: 1rem;
+    }
+    section#feedback img#feeedbackLanding {
+        top: 25%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    section#feedback img#feeedbackLanding {
+        top: 35%;
+        height: 35%;
+    }
+    section#feedback div.container div.review p {
+        font-size: .8rem;
+    }
+    section#feedback div.container button#next {
+        height: 75px;
+        width: 75px;
+    }
 }
