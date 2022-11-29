@@ -4,7 +4,7 @@
         <a class="menu-item" href="{{route('index')}}#welcome">Bienvenue</a>
         <a class="menu-item" href="{{route('index')}}#guideline">Guideline</a>
         <a class="menu-item" href="{{route('index')}}#services">Services</a>
-        <a class="menu-item" href="{{route('index')}}#clients">Clients</a>
+        <a class="menu-item" href="{{route('index')}}#feedback">Clients</a>
         <a class="menu-item" href="{{route('index')}}#contact">Contact</a>
         <a class="menu-item" href="https://blog.sarquentin.fr" target="_blank">Mon blog</a>
     </nav>

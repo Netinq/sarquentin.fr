@@ -9,7 +9,7 @@
         <div class="review" itemscope itemtype="https://schema.org/Review">
             <img class="authorImg" loading="lazy" src="{{ $review[0][2] }}" alt="" />
             <div itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <meta itemprop="givenName" content = "{{$review[0][1]}}">
+                <meta itemprop="name" content = "{{$review[0][1]}}">
             </div>
             <div class="note" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                 <meta itemprop="ratingValue" content = "{{$review[4]}}">
