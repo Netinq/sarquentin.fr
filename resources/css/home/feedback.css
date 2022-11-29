@@ -23,7 +23,7 @@ section#feedback div.container {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     column-gap: 25px;
     margin-top: 50px;
     padding-right: 10%;
