@@ -16,7 +16,7 @@ use App\Http\Controllers\MainController;
 
 Route::controller(MainController::class)->group(function () {
     Route::get('/','index')->name('index');
-    Route::get('/legal','legal')->name('legal');
+    Route::get('/mentions-legales','legal')->name('legal');
 });
 
 

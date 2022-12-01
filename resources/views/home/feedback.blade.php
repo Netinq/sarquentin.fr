@@ -7,9 +7,9 @@
     <div class="container">
         @foreach($reviews as $review)
         <div class="review" itemscope itemtype="https://schema.org/Review">
-            <img class="authorImg" src="{{ $review[0][2] }}" alt="" />
+            <img class="authorImg" loading="lazy" src="{{ $review[0][2] }}" alt="" />
             <div itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <meta itemprop="givenName" content = "{{$review[0][1]}}">
+                <meta itemprop="name" content = "{{$review[0][1]}}">
             </div>
             <div class="note" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                 <meta itemprop="ratingValue" content = "{{$review[4]}}">
@@ -20,7 +20,7 @@
                     <img class="star" src="{{asset('svg/star-filled.svg')}}" alt="Filled star icon">
                 @endfor
             </div>
-            <h4>{{$review[0][1]}}, <span>{{$review[1]}}</span></h4>
+            <h3>{{$review[0][1]}}, <span>{{$review[1]}}</span></h3>
             <p itemprop="reviewBody" class="reviewBody">{{$review[3]}}</p>
             <a href="{{$review[18]}}" target="_blank">Voir l'avis</a>
             <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">

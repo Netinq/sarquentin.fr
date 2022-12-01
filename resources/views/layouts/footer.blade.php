@@ -7,7 +7,7 @@
         <a href="{{route('index')}}#welcome">Bienvenue</a>
         <a href="{{route('index')}}#guideline">Guideline</a>
         <a href="{{route('index')}}#services">Services</a>
-        <a href="{{route('index')}}#clients">Clients</a>
+        <a href="{{route('index')}}#feedback">Clients</a>
         <a href="{{route('index')}}#contact">Contact</a>
     </div>
     <div class="box">
