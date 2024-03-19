@@ -28,6 +28,7 @@ class MainController extends Controller
             $reviews  = ltrim($reviews[3][6], ")]}'"); /* fix json */
             $reviews  = json_decode($reviews);
             $reviews  = $reviews[6][175][9][0][0]; // NEW IN 2020
+            dd($reviews[1][0][2][15][0][0]);
         }
         $clients = ['shyroquizz', 'impex', 'districtgames', 'lexnea', 'bst', 'animecards'];
 

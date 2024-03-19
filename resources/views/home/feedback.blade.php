@@ -20,7 +20,7 @@
                     <img class="star" src="{{asset('svg/star-filled.svg')}}" alt="Filled star icon">
                 @endfor
             </div>
-            <h3>{{$review[0][1][4][1][1]}}, <span>{{$review[0][0][1][6]}}</span></h3>
+            <h3>{{$review[0][1][4][1][1]}}, <span>{{$review[0][1][6]}}</span></h3>
             <p itemprop="reviewBody" class="reviewBody">{{ $review[0][0][2][15][0][0] }}</p>
 {{--            <a href="{{$review[18]}}" target="_blank">Voir l'avis</a>--}}
             <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
