@@ -1,5 +1,3 @@
-@section('description', 'Développeur web freelance, je vous accompagne dans la réalisation de votre projet de site internet pour votre entreprise ou votre activité. Je vous propose des solutions sur mesure, adaptées à vos besoins et à votre budget.')
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -63,16 +61,6 @@
         <title>
             @hasSection('title')@yield('title')@else Créons votre site web sur mesure.@endif
         </title>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132838792-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-132838792-1');
-        </script>
 
         @vite('resources/css/master.css')
         @vite('resources/css/app.css')
