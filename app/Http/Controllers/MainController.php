@@ -49,4 +49,9 @@ class MainController extends Controller
         return view('legal');
     }
 
+    public function legal()
+    {
+        return view('lapotion');
+    }
+
 }
