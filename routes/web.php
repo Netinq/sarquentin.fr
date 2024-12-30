@@ -17,6 +17,7 @@ use App\Http\Controllers\MainController;
 Route::controller(MainController::class)->group(function () {
     Route::get('/','index')->name('index');
     Route::get('/mentions-legales','legal')->name('legal');
+    Route::get('/confidentiality/lapotion','lapotion')->name('lapotion');
 });
 
 
