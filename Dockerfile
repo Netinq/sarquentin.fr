@@ -1,10 +1,4 @@
-FROM node:20-alpine AS node
 FROM php:8.4-fpm
-
-# Copy Node.js from node image
-COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
-COPY --from=node /usr/local/bin/node /usr/local/bin/node
-RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -29,6 +23,11 @@ RUN docker-php-ext-configure intl
 RUN docker-php-ext-install pdo pdo_mysql zip exif gd intl bcmath
 RUN docker-php-ext-enable pdo_mysql gd intl
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
