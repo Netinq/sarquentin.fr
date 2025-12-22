@@ -50,10 +50,13 @@ function displayReviews() {
         if (displayedReviews.includes(index)) {
             count += 0.1;
             review.style.display = 'flex';
+            review.style.animation = 'none';
+            review.offsetHeight; // Force reflow
             review.style.animation = `review .3s ${count}s ease-out, opacity ${count}s`;
         }
         else {
             review.style.display = 'none';
+            review.style.animation = 'none';
         }
     });
 }

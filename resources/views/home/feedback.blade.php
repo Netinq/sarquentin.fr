@@ -1,3 +1,4 @@
+@if($reviews && !empty($reviews['reviews']))
 <section id="feedback">
     <div class="container-text">
         <span class="pre">{!! $contents->feedback->pre !!}</span>
@@ -5,27 +6,26 @@
         <p>{!! $contents->feedback->description !!}</p>
     </div>
     <div class="container">
-        @foreach($reviews as $review)
+        @foreach($reviews['reviews'] as $review)
         <div class="review" itemscope itemtype="https://schema.org/Review">
-            <img class="authorImg" loading="lazy" src="{{ $review[0][1][4][5][1] }}" alt="" />
+            <img class="authorImg" loading="lazy" src="{{ $review['photo'] }}" alt="{{ $review['author'] }}" />
             <div itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <meta itemprop="name" content = "{{$review[0][1][4][5][0]}}}">
+                <meta itemprop="name" content="{{ $review['author'] }}">
             </div>
             <div class="note" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                <meta itemprop="ratingValue" content = "{{$review[0][2][0][0]}}">
-                @for ($i = 0; $i < (5 - $review[0][2][0][0]); $i++)
+                <meta itemprop="ratingValue" content="{{ $review['rating'] }}">
+                @for ($i = 0; $i < (5 - $review['rating']); $i++)
                     <img class="star" src="{{asset('svg/star.svg')}}" alt="Star icon">
                 @endfor
-                @for ($i = 0; $i < $review[0][2][0][0]; $i++)
+                @for ($i = 0; $i < $review['rating']; $i++)
                     <img class="star" src="{{asset('svg/star-filled.svg')}}" alt="Filled star icon">
                 @endfor
             </div>
-            <h3>{{$review[0][1][4][5][0]}}, <span>{{$review[0][1][6]}}</span></h3>
-            <p itemprop="reviewBody" class="reviewBody">{{ $review[0][2][15][0][0] }}</p>
-            <a href="{{$review[0][4][3][0]}}" target="_blank">Voir l'avis</a>
+            <h3>{{ $review['author'] }}, <span>{{ $review['time'] }}</span></h3>
+            <p itemprop="reviewBody" class="reviewBody">{{ $review['text'] }}</p>
             <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
-                <meta itemprop="name" content = "MONSIEUR SAR QUENTIN">
-                <meta itemprop="image" content = "{{asset('images/logo.png')}}">
+                <meta itemprop="name" content="MONSIEUR SAR QUENTIN">
+                <meta itemprop="image" content="{{asset('images/logo.png')}}">
             </div>
         </div>
         @endforeach
@@ -33,3 +33,4 @@
     </div>
     <img id="feeedbackLanding" src="{{asset('images/feedback.png')}}" alt="feedback">
 </section>
+@endif

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "WebSearch",
+      "Bash(grep:*)",
+      "Bash(php artisan:*)",
+      "WebFetch(domain:www.google.com)",
+      "Bash(php test_reviews.php:*)",
+      "Bash(findstr:*)",
+      "Bash(del:*)"
+    ]
+  }
+}

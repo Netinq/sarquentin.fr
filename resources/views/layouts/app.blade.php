@@ -35,19 +35,19 @@
         <meta property="og:image" content="{{asset('images/meta.jpg')}}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sarquentin.fr" />
-        <meta property="og:site_name" content="{{Config::get('app.name')}}" />
+        <meta property="og:site_name" content="{{ config('app.name') }}" />
         <meta property="author" content="MONSIEUR QUENTIN SAR" />
         <meta property="profile:gender" content="male" />
         <meta property="og:locale" content="fr_FR" />
 
         <!-- IOS meta -->
-        <meta name="apple-mobile-web-app-title" content="{{Config::get('app.name')}}">
+        <meta property="og:site_name" content="{{ config('app.name') }}" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script type="application/ld+json">
             {
-                "@context": "http://schema.org",
-                "@type": "Organization",
+                "@@context": "http://schema.org",
+                "@@type": "Organization",
                 "name": "MONSIEUR QUENTIN SAR",
                 "legalName": "MONSIEUR QUENTIN SAR",
                 "description": "Développeur web freelance, je vous accompagne dans la réalisation de votre projet de site internet pour votre entreprise ou votre activité. Je vous propose des solutions sur mesure, adaptées à vos besoins et à votre budget.",
