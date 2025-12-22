@@ -23,7 +23,7 @@ RUN docker-php-ext-configure intl
 RUN docker-php-ext-install pdo pdo_mysql zip exif gd intl bcmath
 RUN docker-php-ext-enable pdo_mysql gd intl
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-
+<
 # Install Node.js
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
